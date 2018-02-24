@@ -49,17 +49,6 @@
 
 /* Private define ------------------------------------------------------------*/
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-#define Button_Pin GPIO_PIN_0
-#define Button_GPIO_Port GPIOA
-=======
->>>>>>> 2a7f8d7... Initial commit 
-=======
->>>>>>> 2a7f8d7... Initial commit 
-=======
->>>>>>> 2a7f8d7... Initial commit 
 #define LD4_Pin GPIO_PIN_8
 #define LD4_GPIO_Port GPIOC
 #define LD3_Pin GPIO_PIN_9
