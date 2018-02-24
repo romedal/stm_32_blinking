@@ -47,7 +47,7 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-
+long i;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -101,6 +101,7 @@ int main(void)
   while (1)
   {
 
+<<<<<<< HEAD
 	  /* USER CODE END WHILE */
 	  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0))
 	  {
@@ -112,6 +113,17 @@ int main(void)
 		  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8, GPIO_PIN_SET);
   }
   /* USER CODE BEGIN 3 */
+=======
+  /* USER CODE END WHILE */
+
+  /* USER CODE BEGIN 3 */
+
+		  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_9);
+		  HAL_Delay(500);
+		  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_8);
+		  HAL_Delay(500);
+
+>>>>>>> 2a7f8d7... Initial commit 
 
   }
   /* USER CODE END 3 */
@@ -186,11 +198,19 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, LD4_Pin|LD3_Pin, GPIO_PIN_RESET);
 
+<<<<<<< HEAD
   /*Configure GPIO pin : Button_Pin */
   GPIO_InitStruct.Pin = Button_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(Button_GPIO_Port, &GPIO_InitStruct);
+=======
+  /*Configure GPIO pin : PA0 */
+  GPIO_InitStruct.Pin = GPIO_PIN_0;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+>>>>>>> 2a7f8d7... Initial commit 
 
   /*Configure GPIO pins : LD4_Pin LD3_Pin */
   GPIO_InitStruct.Pin = LD4_Pin|LD3_Pin;
