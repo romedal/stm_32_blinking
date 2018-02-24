@@ -51,8 +51,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define Button_Pin GPIO_PIN_0
 #define Button_GPIO_Port GPIOA
+=======
+>>>>>>> 2a7f8d7... Initial commit 
 =======
 >>>>>>> 2a7f8d7... Initial commit 
 =======
